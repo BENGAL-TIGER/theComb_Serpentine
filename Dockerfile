@@ -79,7 +79,7 @@ RUN julia -e 'import Pkg; Pkg.update()' && \
     julia -e 'import Pkg; Pkg.add("RDatasets")' && \
     julia -e 'import Pkg; Pkg.add("IJulia")' && \
     # Precompile Julia packages \
-    julia -e 'using IJulia' && \
+    julia -e 'using IJulia' 
     # # move kernelspec out of home \
     # mv $HOME/.local/share/jupyter/kernels/julia* $CONDA_DIR/share/jupyter/kernels/ && \
     # chmod -R go+rx $CONDA_DIR/share/jupyter && \
