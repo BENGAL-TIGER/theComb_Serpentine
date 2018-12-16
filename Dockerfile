@@ -89,12 +89,12 @@ RUN julia-${JULIA_VERSION} -e 'import Pkg; Pkg.update()' && \
 # install ruby
 USER    root
 
-RUN     apt-get -y update && \
+RUN     apt-get update -y && \
         apt-get install -y ruby-full && \
-        gem install -y daru && \
-        apt install -y libtool libffi-dev ruby ruby-dev make && \
-        apt install -y libzmq3-dev libczmq-dev && \
-        gem install -y cztop iruby && \
+        gem install daru && \
+        apt install libtool libffi-dev ruby ruby-dev make && \
+        apt install libzmq3-dev libczmq-dev && \
+        gem install cztop iruby && \
         iruby register --force
 
 
