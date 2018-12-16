@@ -89,7 +89,7 @@ RUN julia-${JULIA_VERSION} -e 'import Pkg; Pkg.update()' && \
 # install ruby
 USER    root
 
-RUN     apt-get update -y && \
+RUN     apt-get update && \
         apt-get install -y ruby-full && \
         gem install daru && \
         apt install libtool libffi-dev ruby ruby-dev make && \
