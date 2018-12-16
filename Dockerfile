@@ -89,7 +89,7 @@ RUN julia-${JULIA_VERSION} -e 'import Pkg; Pkg.update()' && \
 # install ruby
 USER    root
 
-RUN     apt update
+RUN     apt-get update
 
 RUN     apt-get install ruby-full
 
