@@ -87,7 +87,8 @@ RUN julia-${JULIA_VERSION} -e 'import Pkg; Pkg.update()' && \
     # fix-permissions $JULIA_PKGDIR $CONDA_DIR/share/jupyter
 
 # install ruby
-RUN   \curl -sSL https://get.rvm.io | bash -s stable --ruby
+RUN   apt-get install ruby-full
+
 
 
 USER    $NB_UID
