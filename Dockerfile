@@ -91,7 +91,12 @@ USER    root
 
 RUN     apt-get update && \
         apt-get -y install ruby-full && \
-        gem install daru 
+        gem install daru && \
+        apt install libtool libffi-dev ruby ruby-dev make && \
+        apt install libzmq3-dev libczmq-dev && \
+        gem install cztop iruby && \
+        iruby register --force
+
 
 
 
