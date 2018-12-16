@@ -1,8 +1,8 @@
 # ψᵟ
 #
 # adapted from jupyter/datascience-notebook
-# FROM jupyter/scipy-notebook
-FROM python:3.7.1-stretch
+FROM jupyter/scipy-notebook
+
 LABEL   maintainer="mdAshford"
 
 USER root
