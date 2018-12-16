@@ -88,14 +88,9 @@ RUN julia-${JULIA_VERSION} -e 'import Pkg; Pkg.update()' && \
 
 # install ruby
 USER    root
-
-# RUN     apt-get -y update && \
-#         apt-get install -y ruby-full && \
-#         gem install daru && \
-#         apt install libtool libffi-dev ruby ruby-dev make && \
-#         apt install libzmq3-dev libczmq-dev && \
-#         gem install cztop iruby && \
-#         iruby register --force
+        npm install -g typescript
+        npm install -g itypescript
+        its --ts-install=local
 
 
 
