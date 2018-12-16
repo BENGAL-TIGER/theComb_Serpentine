@@ -91,7 +91,7 @@ USER    root
 
 RUN     apt-get update
 
-RUN     apt-get install ruby-full
+RUN     apt-get -y install ruby-full
 
 
 
